@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
-<!-- get on correct post or first if we don't have one -->
+<!-- get on correct post or first if we don't have one.  Also, the above is a default language that the site will originally be seen as. -->
 {% if page.collection %}
     {% assign current = page %}
 {% else %}
     {% assign current = site.posts[0] %}
-{% endif %}
-
+{% endif %}  <!-- above, if I don't have a post, use the most original one. -->
+	
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% if page.robots %}
-        <meta name="robots" content="{{ page.robots }}" />
+        <meta name="robots" content="{{ page.robots }}" /> <!-- This is so google can't find you. -->
     {% endif %}
-    {{ seo }}
+    {{ seo }} <!-- this is supplied by netlify and the below are style sheets. -->
 	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -24,16 +24,16 @@
 	<!--[if lt IE 8]>
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">  <!-- This is for the mobile site -->
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
 	<div id="header">
-		<nav>
+		<nav> <!--NAV bar right here!! -->
             {% for static in site.pages %}
                 {% if static.id %}
-                    <li class="downloads"><a href="#{{ static.id }}">{{ static.title }}</a></li>
+                    <li class="downloads"><a href="#{{ static.id }}">{{ static.title }}</a></li> <!-- #= bookmarklet = the tabs at the top of the site for navigation -->
 
                 {% endif %}
             {% endfor %}
@@ -56,7 +56,7 @@
                 {{ current.content }}
 
             </section>
-            <section>
+            <section> <!--For 5 most recent posts -->
                 {% for post in site.posts limit: 5 %}
                     {% if post.id == current.id %}
                         {% continue %}
@@ -119,7 +119,7 @@
 	</script>
 	{% endif %}
     {% if page.id %}
-        <script>
+        <script> 
             window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#{{ page.id }}"
         </script>
     {% endif %}

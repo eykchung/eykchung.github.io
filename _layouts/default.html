@@ -58,6 +58,7 @@
 </nav>
 	 </div> <!--DON'T DELETE DIV + END HEADER -->
 
+
 	<div class="wrapper container">
 
 		<section>
@@ -102,17 +103,18 @@
                     {% if static.thumbnail %}
                         <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
                     {% endif %}
-                   <div id="title">
+                    <div id="title">
+                        <h1>{{ static.title }}</h1>
+                        <hr>
                     </div>
 
                     {{ static.content }}
-			</div>
+                    </div>
 
                 {% endif %}
 			{% endfor %}
+		</section>
 		
-			</section>
-			
 <!-- ADDED JUMBOTRON THING HERE-->
 			<div class="jumbotron">  		   		   
 				    <h1 class="display-3">Hello, world!</h1>

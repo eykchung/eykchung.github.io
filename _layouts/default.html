@@ -59,7 +59,7 @@
 	 </div> <!--DON'T DELETE DIV + END HEADER -->
 
 
-	<div class="wrapper container">
+		<div class="wrapper container">
 
 		<section>
 			{% if current.thumbnail %}
@@ -99,14 +99,14 @@
 		<section>
 			{% for static in site.pages %}
                 {% if static.id %}
-
-			<div id="Contact">
+                    <div id="{{ static.id }}">
                     {% if static.thumbnail %}
                         <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
                     {% endif %}
-  
-                        <h1>Contact</h1>
+                    <div id="title">
+                        <h1>{{ static.title }}</h1>
                         <hr>
+                    </div>
 
                     {{ static.content }}
                     </div>
@@ -114,11 +114,9 @@
                 {% endif %}
 			{% endfor %}
 		</section>
-		
 		<footer id="footer">
 		</footer>
 	</div>
-	
 	<!-- ADDED JUMBOTRON THING HERE-->
 			<div class="jumbotron">  		   		   
 				    <h1 class="display-3">Hello, world!</h1>

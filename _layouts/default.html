@@ -40,9 +40,11 @@
 				<ul class="navbar-nav ml-auto">
 
                 {% for static in site.pages %}
-                    {% if static.id %}
+                    {% if static.id %} 
+					
+<!-- header stuff incl the about button here --> 
                         <li class="nav-item">
-                            <a class="nav-link" href="#{{ static.id }}">{{ static.title }}</a>
+                            <a class="nav-link" href="#About"> About</a>
                         </li>
                     {% endif %}
                 {% endfor %}
@@ -62,8 +64,8 @@
 			{% if current.thumbnail %}
                 <img src="{{ current.thumbnail }}" alt="{{ current.title }}" title="{{ current.title }}" />
             {% endif %}
-            <div id="title">
-				<h1>{{ current.title }}</h1>
+            <div id="About">
+				<h1>About</h1>
 				<hr>
 			</div>
 

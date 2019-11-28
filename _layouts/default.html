@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
-<!-- get on correct post or first if we don't have one -->
+<!-- GET ON CORRECT POST OR FIRST IF WE DON'T HAVE ONE -->
 {% if page.collection %}
     {% assign current = page %}
 {% else %}
@@ -18,10 +18,10 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
-	<!--[if lt IE 9]>
+	<!-- CODE????[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	<!--[if lt IE 8]>
+	<!-- CODE????[if lt IE 8]>
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -29,16 +29,35 @@
 </head>
 
 <body>
-	<div id="header"> <!--everything after is nav -->
+	<div id="header"> <!--EVERYTHING AFTER IS NAV -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Elyssa Chung</a> <!-- LOGO!!! -->
+  <a class="navbar-brand" href="#">Elyssa Chung</a> <!-- LOGO!!! THEN TOGGLE BAR AFTERWARDS-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+ 
+	  <ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Cras justo odio
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Dapibus ac facilisis in
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Morbi leo risus
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
+<!--INSIDE THE TOGGLE BAR -->	  
+	</button>
 
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
-   
+   <!-- nav bar buttons here -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">Content</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>
       </li>    
@@ -103,12 +122,12 @@
     <!-- Added jumbotron thing here-->
 			    
 			    <div class="jumbotron">
-   <h1>{{ static.title }}</h1>
-                        <hr> 
+   
 				    <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
+  <p class="lead"> This is a section where I introduce myself whoo.</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>If life gives me lemons, I'm gonna take those lemons and figure out a way to burn down your house- with those lemons.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>

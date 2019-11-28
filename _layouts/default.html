@@ -99,21 +99,12 @@
 		<section>
 			{% for static in site.pages %}
                 {% if static.id %}
-                    <div id="About">
+
+			<div id="About">
                     {% if static.thumbnail %}
                         <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
                     {% endif %}
-                    <div id="title">
-                        <h1>About</h1>
-                        <hr>
-                    </div>
-
-                    {{ static.content }}
-                    </div>
-
-                {% endif %}
-			{% endfor %}
-		</section>
+                   
 		
 <!-- ADDED JUMBOTRON THING HERE-->
 			<div class="jumbotron">  		   		   
@@ -127,7 +118,17 @@
   </p>
 </div>
 		
-		
+ <div id="Contact">
+                        <h1>Contact</h1>
+                        <hr>
+                    </div>
+
+                    {{ static.content }}
+                    </div>
+
+                {% endif %}
+			{% endfor %}
+		</section>
 		
 		<footer id="footer">
 		</footer>

@@ -100,28 +100,13 @@
 			{% for static in site.pages %}
                 {% if static.id %}
 
-			<div id="About">
+			<div id="Contact">
                     {% if static.thumbnail %}
                         <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
                     {% endif %}
-                   
-		
-<!-- ADDED JUMBOTRON THING HERE-->
-			<div class="jumbotron">  		   		   
-				    <h1 class="display-3">Hello, world!</h1>
-<!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
-  <p class="lead"> This is a section where I introduce myself whoo.</p>
-  <hr class="my-4">
-  <p>If life gives me lemons, I'm gonna take those lemons and figure out a way to burn down your house- with those lemons.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
-		
- <div id="Contact">
+  
                         <h1>Contact</h1>
                         <hr>
-                    </div>
 
                     {{ static.content }}
                     </div>
@@ -133,6 +118,19 @@
 		<footer id="footer">
 		</footer>
 	</div>
+	
+	<!-- ADDED JUMBOTRON THING HERE-->
+			<div class="jumbotron">  		   		   
+				    <h1 class="display-3">Hello, world!</h1>
+<!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
+  <p class="lead"> This is a section where I introduce myself whoo.</p>
+  <hr class="my-4">
+  <p>If life gives me lemons, I'm gonna take those lemons and figure out a way to burn down your house- with those lemons.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+	
 	<script>
 		if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {

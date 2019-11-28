@@ -102,12 +102,17 @@
                     {% if static.thumbnail %}
                         <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
                     {% endif %}
-                    <div id="title">
-                      
-    <!-- Added jumbotron thing here-->
-			    
-			    <div class="jumbotron">
-   
+                   <div id="title">
+                    </div>
+
+                    {{ static.content }}
+			</div>
+
+                {% endif %}
+			{% endfor %}
+			
+			<!-- Added jumbotron thing here-->
+			<div class="jumbotron">  		   		   
 				    <h1 class="display-3">Hello, world!</h1>
 <!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
   <p class="lead"> This is a section where I introduce myself whoo.</p>
@@ -117,15 +122,9 @@
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>
-			    
-                    </div>
-
-                    {{ static.content }}
-                    </div>
-
-                {% endif %}
-			{% endfor %}
 		</section>
+		
+		
 		<footer id="footer">
 		</footer>
 	</div>

@@ -6,7 +6,7 @@ id: contact
 
 <form>
 <fieldset>
-<legend>Legend</legend>
+<legend>Thank you for taking a look at my portfolio.  Have anything to say?  please put it down in the form below!</legend>
 <div class="form-group row">
 <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
 <div class="col-sm-10">

@@ -4,7 +4,8 @@ title: Contact
 id: contact
 ---
 
-<form>
+<!--HTML FORM TO EMAIL-->
+<form method="post" action="send_mail.php">
 <fieldset>
 <legend>Thank you for taking a look at my portfolio.  Have anything to say?  please put it down in the form below!</legend>
 <div class="form-group row">
@@ -13,14 +14,18 @@ id: contact
 <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="eykdes@gmail.com">
 </div>
 </div>
+<div class="name">
+<label for="InputName">Name</label>
+<input type="text" name="first_name" class="form-control" id="InputName" aria-describedby="firstName" placeholder="Enter first name">
+</div>
 <div class="form-group">
 <label for="exampleInputEmail1">Email address</label>
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 </div>
 <div class="form-group">
 <label for="exampleTextarea">Any comments?</label>
-<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+<textarea class="form-control" textarea name="comments" id="exampleTextarea" rows="3"></textarea>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </fieldset>

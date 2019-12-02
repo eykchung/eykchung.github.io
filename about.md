@@ -14,6 +14,6 @@ id: about
 <hr class="my-4">
 <p>Just as a short introductory blurb: I love food and my favourite colour is blue.  I am curious to a fault, so I'll always be willing to learn and am no stranger to hard work.  I am open-minded and will always have a heart to keep the good of others to heart.  Also, since I come from a visual arts, culinary and musical background, it's guaranteed that I'm creative and will be constantly innovating and problem-solving to the best of my abilities.  </p>
 <p class="lead">
-<a class="btn btn-info btn-lg" href="ImIntriguedMoar.html" role="button">I'm intruiged, tell me more</a>
+<a class="btn btn-info btn-lg" href="/images/uploads/20190923_assignment-1.pdf" role="button">I'm intruiged, tell me more</a>
 </p>
 </div>

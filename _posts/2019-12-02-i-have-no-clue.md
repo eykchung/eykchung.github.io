@@ -1,15 +1,19 @@
 ---
 layout: default
-title: I have no clue
+title: 'Pill Box 2: the Sequel'
 date: '2019-12-02 04:30:24'
 myangle: >-
-  THIS IS MY ANGLE
+  **What is the Angle?**
 
 
-  I really hope this also appears.  I need to find out what makes this part tick
-  and what the title the hyperlink uses in order to get this to work..  From
-  what it seems with the publishing feature that's appearing in the right hand
-  side, it looks exactly like the main text above.  The most it seems is like
-  another paragraph.  Suppose I can toggle around with the css for this..?
+  Angle this time is figuring out how to get the mechanisms (mainly the door
+  popping open and the pill boxes to link up together) working.  We're mainly
+  using cardboard, though we're also using phones and a telephone connection in
+  order to demonstrate the bluetooth/wifi connection the prototype would have in
+  order to enable the alarm function.  Magnets, velcro and the recycling of old
+  clicker pens will also be involved when  building the prototype.  Lastly,
+  we're going to be researching some articles in order to help us flesh out the
+  whole idea of cultivating a behavior that involves the encouragement for daily
+  medicine intake and regulation.
 ---
-No image this time, just a plain entry to just get a feel as to what's going on with the entry stuff.  Honestly though, trying to get this site up and running is a little beyond my expertise.  I've been trying to get the toggle working for the past couple of hours and nada.  That said, there's still the styling I have to do with CSS, and I'm just right now drowning in code- trying to get a sense of my bearings and whatnot.  That said, let's see how this turns out..
+This is in anticipation for what the second iteration of the project will look like.  My group and I are planning on fleshing out the prototype further via an app prototype rendered in Adobe XD and extra mechanisms in order to get the more physical side of the box brought to life.

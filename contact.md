@@ -17,7 +17,7 @@ id: contact
 </div>
 <div class="name">
 <label for="InputName">Name </label>
-<input type="text" name="first_name" required class="form-control" id="InputName" aria-describedby="firstName" placeholder="Enter first name">
+<input type="text" name="first_name" required class="form-control" id="InputName" aria-describedby="aria-label" placeholder="Enter first name">
 </div>
 <div class="form-group">
 <label for="exampleInputEmail1">Email address </label>

@@ -2,6 +2,7 @@
 ---
 @import "bootstrap.min.css";
 
+<style>
 .card .card-body .{{ post.thumbnail }} {
     display: block;
     border-radius: 2px 2px 0 0;
@@ -12,3 +13,5 @@
     bottom: 0;
     width: 100%;
 }
+
+</style>

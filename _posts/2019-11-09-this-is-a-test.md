@@ -5,9 +5,6 @@ date: '2019-11-09 16:28:16'
 thumbnail: /images/uploads/screenshot-209-.jpg
 preview: /images/uploads/1.png
 myangle: >-
-  **As For An Angle?**
-
-
   I really don't have one...  I'm just aiming to get this done and do my best
   while within the time limit I've been given.  I'm definitely going to be
   revisiting to get more stuff done after the end date though for now, what's

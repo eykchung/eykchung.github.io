@@ -2,6 +2,7 @@
 ---
 @import "bootstrap.min.css";
 
+<header>
 <style>
 .card .card-body .{{ post.thumbnail }} {
     display: block;
@@ -12,5 +13,6 @@
     top: 0;
     bottom: 0;
     width: 100%;
-}
+
 </style>
+</header>

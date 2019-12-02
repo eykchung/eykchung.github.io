@@ -3,6 +3,7 @@ layout: default
 title: 'The Portfolio '
 date: '2019-11-09 16:28:16'
 thumbnail: /images/uploads/screenshot-209-.jpg
+preview: /images/uploads/1.png
 myangle: >-
   **As For An Angle?**
 

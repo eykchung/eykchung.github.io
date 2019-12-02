@@ -15,20 +15,17 @@ id: contact
 </div>
 </div>
 <div class="name">
-<label for="InputName">Name
+<label for="InputName">Name </label>
 <input type="text" name="first_name" required class="form-control" id="InputName" aria-describedby="firstName" placeholder="Enter first name">
-</label>
 </div>
 <div class="form-group">
-<label for="exampleInputEmail1">Email address
+<label for="exampleInputEmail1">Email address </label>
 <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-</label>
 </div>
 <div class="form-group">
-<label for="exampleTextarea">Any comments?
+<label for="exampleTextarea">Any comments? </label>
 <textarea class="form-control" name="comments" id="exampleTextarea" rows="3"></textarea>
-</label>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </fieldset>

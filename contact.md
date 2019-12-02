@@ -4,7 +4,7 @@ title: Contact
 id: contact
 ---
 
-<!--HTML FORM TO EMAIL-->
+<!--HTML FORM TO EMAIL: https://www.quackit.com/html/codes/html_form_to_email.cfm -->
 <form method="post" action="send_mail.php">
 <fieldset>
 <legend>Thank you for taking a look at my portfolio.  Have anything to say?  please put it down in the form below!</legend>

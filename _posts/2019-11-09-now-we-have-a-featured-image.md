@@ -22,10 +22,14 @@ myangle: >-
   Works Cited
 
 
-  <blockquote>McGlashan, Ann. "A Pedagogic Approach to Enhance Creative Ideation
-  in  Classroom Practice." Springer Science + Business Media Dordecht, 2017. 
-  Int J Technol Des Educ, vol. 28, 2018, pp. 377-393.
+  <blockquote> McGlashan, Ann. "A Pedagogic Approach to Enhance Creative
+  Ideation in  Classroom Practice." Springer Science + Business Media Dordecht,
+  2017.  Int J Technol Des Educ, vol. 28, 2018, pp. 377-393.
 
+
+  <br>
+
+  <br>
 
   Ratto, Matt. "Critical Making: Conceptual and Material Studies in Technology
   and Social Life." The Information Society: An International Journal, vol. 27,

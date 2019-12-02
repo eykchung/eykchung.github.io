@@ -2,6 +2,8 @@
 layout: default
 title: 'Pill Box 2: the Sequel'
 date: '2019-12-02 04:30:24'
+thumbnail: /images/uploads/20191202_125457.jpg
+preview: /images/uploads/untitled-design.png
 myangle: >-
   **What is the Angle?**
 

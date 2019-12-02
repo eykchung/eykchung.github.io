@@ -84,7 +84,7 @@
                     {% for post in posts limit:3 offset:offset %}
                         <div class="col-md-4">
                             <div class="card bg-light mb-3" style="max-width: 20rem;">
-                              <div class="card">
+                            
 				<div class="card-header">{{ post.title }}</div>
                                 <div class="card-body">
                                     <a href="{{ post.url }}">
@@ -96,7 +96,7 @@
                                     </a>
                                 </div>
                             </div>
-			  </div>
+			  
                         </div>
                     {% endfor %}
                 </div>

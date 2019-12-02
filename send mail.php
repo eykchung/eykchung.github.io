@@ -9,7 +9,7 @@ $webmaster_email = "eykdes@gmail.com";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "contact.md";
+$contact_page = "contact.md";
 $error_page = "error_message.html";
 $thankyou_page = "thank_you.html";
 

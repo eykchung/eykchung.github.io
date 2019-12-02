@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<!-- GET ON CORRECT POST OR FIRST IF WE DON'T HAVE ONE -->
+{% if page.collection %}
+    {% assign current = page %}
+{% else %}
+    {% assign current = site.posts[0] %}
+{% endif %}
+
+<head>
+	<title> Elyssa Chung </title>
+	<link rel="shortcut icon" type="img/png" href="/images/uploads/noun_Octopus_1675293.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	{% if page.robots %}
+    	<meta name="robots" content="{{ page.robots }}" />
+	{% endif %}
+	{{ seo }}
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+	<!-- CODE????[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<!-- CODE????[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+	<div id="header"> <!--EVERYTHING AFTER IS NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#header">Elyssa Chung</a> <!-- LOGO!!! THEN TOGGLE BAR AFTERWARDS-->
+	
+	
+<!--TOGGLE STUFF BELOW -->
+	<a class="navbar-toggler" data-toggle="dropdown" href="#navbarColor03" id="navbarDropdown" data-target="#navbarColor03" aria-controls="navbarColor03" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+ 
+<!--TOGGLE STUFF ABOVE -->
+	
+
+  <div class="collapse navbar-collapse" id="navbarColor03" aria-labelledby="navbarDropdown">
+<ul class="navbar-nav mr-auto">
+   <!-- NAV BAR BUTTONS HERE -->
+<li class="nav-item">
+        <a href="#title" class="nav-link"> Content</a>
+	<li class="nav-item">
+        <a href="#about" class="nav-link"> About</a>
+      </li>    
+      <li class="nav-item">
+        <a href="#contact" class="nav-link"> Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" role="search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	 </div> <!--DON'T DELETE DIV + END HEADER -->
+
+<!--INSERT BODY HERE, SO BEGINS THE FURTHER INFO-->
+
+
+<footer id="footer">
+<!-- think about social media? -->
+			
+			</footer>
+	</div>
+	
+	<script>
+		if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+	</script>
+	{% if site.google_analytics %}
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', '{{ site.google_analytics }}', 'auto');
+            ga('send', 'pageview');
+        </script>
+	{% endif %}
+	{% unless page.collection %}
+        {% if page.id %}
+            <script>
+                window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#{{ page.id }}"
+            </script>
+        {% endif %}
+	{% endunless %}
+
+</body>
+
+</html>

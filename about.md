@@ -5,7 +5,7 @@ id: about
 ---
 <!-- ADDED JUMBOTRON THING HERE-->
 			
-<div class="card border-secondary mb-3" content="width=device-width, initial-scale=1.0">
+
 <div class="jumbotron" id= "about">  		   		   
 <h1 class="display-3">Hello my name is Elyssa Chung, nice to meet you!</h1>
 <!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
@@ -16,5 +16,4 @@ id: about
 <p class="lead">
 <a class="btn btn-info btn-lg" href="#" role="button">I'm intruiged, tell me more</a>
 </p>
-</div>
 </div>

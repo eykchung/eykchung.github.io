@@ -5,6 +5,7 @@ id: contact
 ---
 
 <!--HTML FORM TO EMAIL: https://www.quackit.com/html/codes/html_form_to_email.cfm -->
+<div id="contact">
 <form method="post" action="send_mail.php">
 <fieldset>
 <legend>Thank you for taking a look at my portfolio.  Have anything to say?  please put it down in the form below!</legend>
@@ -30,3 +31,4 @@ id: contact
 <button type="submit" class="btn btn-primary">Submit</button>
 </fieldset>
 </form>
+</div>

@@ -74,7 +74,13 @@
 			</div>
 
 			{{ current.content }}
-
+			{% if current.myangle %}
+			<h2> My Angle </h2>
+			<br>
+			<p>{{ current.myangle }}</p>
+			<br>
+			<br>
+		{% endif %}
 		</section>
 		<section>
 			{% for i in (1..2) %}
@@ -83,7 +89,7 @@
                     {% assign posts = site.posts | where_exp:"post","post.url != current.url" %}
                     {% for post in posts limit:3 offset:offset %}
                         <div class="col-md-4">
-                            <div class="card bg-light mb-3" style="max-width: 20rem;">
+                            <div class="card bg-light mb-3">
                             
 				<div class="card-header">{{ post.title }}</div>
                                 <div class="card-body">

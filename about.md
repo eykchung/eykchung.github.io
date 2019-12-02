@@ -5,7 +5,7 @@ id: about
 ---
 <!-- ADDED JUMBOTRON THING HERE-->
 			
-<div class="jumbotron">  		   		   
+<div class="jumbotron" id= "about">  		   		   
 <h1 class="display-3">Hello my name is Elyssa Chung, nice to meet you!</h1>
 <!--This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.-->
 <p class="lead">I am a person who, when given the chance, will go above and beyond to get the job done.  

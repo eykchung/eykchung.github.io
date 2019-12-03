@@ -15,8 +15,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Preview Image", name: "preview", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "My Angle", name: "myangle", widget: "markdown", required: false}
       - {label: "Tags", name: "tags", widget: "string", required: false}
+  - name: "page" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Page" # Used in the UI, ie.: "New Post"
+    folder: "pages" # The path to the folder where the documents are stored
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Id", name: "id", widget: "string", required: true}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 

@@ -6,7 +6,7 @@ id: contact
 <!--HTML FORM TO EMAIL: https://www.quackit.com/html/codes/html_form_to_email.cfm -->
 
 <div id="contact">
-<form method="post" >
+<form name="contact" netlify>
 <fieldset>
 <legend>Thank you for taking a look at my portfolio.  Have anything to say?  please put it down in the form below!</legend>
 <div class="form-group row">
